@@ -8,7 +8,7 @@ on:
 
 env:
   REGISTRY: docker.io
-  IMAGE_NAME: ${{ secrets.DOCKER_USERNAME }}/node-client_app
+  IMAGE_NAME: ${{ secrets.DOCKER_USERNAME }}/wayang-kulit
 
 jobs:
   build:
