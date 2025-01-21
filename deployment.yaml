@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: node-client-app
+  name: wayang-kulit
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: node-client-app
+      app: wayang-kulit
   template:
     metadata:
       labels:
-        app: node-client-app
+        app: wayang-kulit
     spec:
       containers:
-      - name: node-client-app
-        image: rotua10/node-client_app:latest  # Ganti dengan nama Docker Hub Anda
+      - name: wayang-kulit
+        image: rotua1005/wayang-kulit:latest  # Ganti sesuai nama Docker Hub Anda
         ports:
         - containerPort: 3000
         env:
